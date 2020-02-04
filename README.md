@@ -1,1 +1,1 @@
-# jsPractice
+# Algos
