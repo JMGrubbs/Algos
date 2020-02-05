@@ -1,5 +1,5 @@
 nums = [2, 4, 6, 3, 8]
-function thing(array) {
+function oddNumOut(array) {
   let evenNum = 0;
   let oddNum = 0;
   let posCheck = '';
@@ -20,4 +20,4 @@ function thing(array) {
     }
   };
 };
-thing(nums);
+oddNumOut(nums);
