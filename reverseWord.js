@@ -30,5 +30,5 @@ function spinWords(revenseWord) {
   }
   return final;
 }
-console.log(spinWords('allthethings'));
-console.log(spinWords('allt'));
+console.log(spinWords('all the things i needs to know'));
+console.log(spinWords('none of the things i dont know'));
