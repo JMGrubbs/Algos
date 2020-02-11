@@ -52,7 +52,6 @@ function matrix(n) {
   return container;
 }
 
-console.log(matrix(3));
 console.log(matrix(5));
 console.log(matrix(6));
 console.log(matrix(15));

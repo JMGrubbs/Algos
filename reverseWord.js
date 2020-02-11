@@ -1,21 +1,34 @@
-function reverseWord(revenseWord) {
+function spinWords(revenseWord) {
   const stringArr = revenseWord.split('');
   let final = '';
-  let word = '';
+  let revWord = '';
+  let forWord = '';
 
   for (let letter of stringArr) {
     if (letter === ' ') {
-      word = word += letter;
-      final = final += word;
-      word = '';
-    } else if (final.length + word.length === stringArr.length - 1) {
-      word = letter += word;
-      final = final += word;
+      if (forWord.length < 5) {
+        forWord = forWord += letter;
+        final = final += forWord;
+      } else {
+        revWord = revWord += letter;
+        final = final += revWord;
+      }
+      revWord = '';
+      forWord = '';
+    } else if (final.length + revWord.length === stringArr.length - 1) {
+      if (forWord.length <= 3) {
+        forWord = forWord += letter;
+        final = final += forWord;
+      } else if (forWord.length >= 4) {
+        revWord = letter += revWord;
+        final = final += revWord;
+      }
     } else {
-      word = letter += word;
+      forWord = forWord += letter;
+      revWord = letter += revWord;
     }
   }
   return final;
 }
-console.log(reverseWord('poop dog'));
-reverseWord('dog poop');
+console.log(spinWords('allthethings'));
+console.log(spinWords('allt'));
