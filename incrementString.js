@@ -32,4 +32,9 @@ function incrementString(str) {
   }
 }
 
-incrementString()
+console.log('foo002', incrementString('foo001'));
+console.log('foo100', incrementString('foo99'));
+console.log('foo0089', incrementString('foo0088'));
+console.log('foo00101', incrementString('foo00100'));
+console.log('1', incrementString(''));
+console.log('foo1', incrementString('foo'));
