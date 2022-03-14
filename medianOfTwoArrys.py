@@ -10,7 +10,7 @@ def func(arry1, arry2):
         try:
             irr = arry1[i]
         except:
-            irr = arry1[i-]
+            irr = arry1[i-1]
 
         try:
             jrr = arry2[j]
