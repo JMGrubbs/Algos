@@ -36,10 +36,10 @@ def trappingWater(arr):
 #     res = 0
 
 #     while l < r:
-#         if maxLeft< maxRight:
+#         if maxLeft < maxRight:
 #             l+=1
 #             maxLeft = max(arr[l], maxLeft)
-#             res =+ maxLeft - arr[l]
+#             res += maxLeft - arr[l]
 #         else:
 #             r-=1
 #             maxRight = max(arr[r], maxRight)
